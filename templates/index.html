@@ -1,0 +1,15 @@
+{% extends 'based.html' %}
+{% block title %}главная{% endblock %}
+{% block body %}
+	<h1>главная страница</h1>
+	{%for el in post %}
+				<div class = 'alert alert-info'>
+					<img src = "{{el[6]}}">
+					<p>{{el[1]}}</p>
+					<p>цена: {{el[2]}}</p>
+					<p>вес: {{el[3]}}</p>
+					<p>бренд: {{el[4]}}</p>
+					<a class = 'btn btn-warning' href = '{{el[0]}}'> подробнее</a>
+				</div>
+			{%endfor %}
+{% endblock %}

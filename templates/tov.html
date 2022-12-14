@@ -1,0 +1,14 @@
+{% extends 'based.html' %}
+{% block title %}главная{% endblock %}
+{% block body %}
+		<div class = 'alert alert-info'>
+			<img src = "{{post[6]}}">
+			<p>{{post[1]}}</p>
+			<p>цена: {{post[2]}}</p>
+			<p>вес: {{post[3]}}</p>
+			<p>бренд: {{post[4]}}</p>
+			<p>{{post[5]}}</p>
+			<a class = 'btn btn-warning' href = '/'> назад</a>
+		</div>
+		
+{% endblock %}
